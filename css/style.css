@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+
+li, a, button,p{
+    font-family: "Albert Sans", serif;
+    font-weight: regular;
+    font-size: 16px;
+    color: black ;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 120px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+nav li a:hover{
+    color: #3B82F6;
+}
+.cta{
+     padding: 9px 25px;
+     background-color: #1E3A8A;
+     border: none;
+     border-radius: 12px;
+     cursor: pointer;
+     transition:all 0.3s ease 0s;
+     color: white;
+     font-weight: bold;
+     
+}
+.cta:hover{
+    background-color: #3B82F6;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 60px 120px;
+    gap: 40px;
+}
+h1{
+    font-family: "Albert Sans";
+    font-size: 36px;
+    font-weight: bold;
+}
+#hero img {
+    height: auto;
+}
+.hero-text{
+    text-align: left;
+}
+.hero-text h1{
+    margin-bottom: 20px;
+}
+.hero-text p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#autopilot{
+    display: inline-block;
+    padding: 9px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #1E3A8A;
+    border-radius: 12px;
+    color: #1E3A8A;
+    transition: all 0.3 ease 0s;
+
+
+}
+#autopilot:hover{
+    background-color: #1E3A8A;
+    color: white;
+}
+#features{
+    align-items: center;
+    text-align: center;
+    padding: 60px 120px;
+    font-family: "Albert Sans";
+    
+}
+
+#features h1 {
+    font-weight: normal;
+    text-align: left;
+
+}
+#features h3{
+    color: #1E3A8A;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 10px;
+    
+}
+.feature{
+    background: color #f3f4f6;    
+}
