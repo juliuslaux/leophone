@@ -13,7 +13,7 @@ This website showcases LeoPhone's features, pricing plans, and allows potential 
 - Font Awesome Icons
 - Albert Sans Font (Google Fonts)
 
-##Visit the website
+## Visit the website
 
 https://juliuslaux.github.io/leophone/
 
