@@ -1,6 +1,6 @@
 # LeoPhone Website
 
-A lading page for LeoPhone - an ai virtual assistant for veterinary clinics
+A landing page for LeoPhone - an ai virtual assistant for veterinary clinics
 
 ## Overview
 
