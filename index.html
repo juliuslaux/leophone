@@ -6,6 +6,7 @@
     <title>Leo - die KI Bürohilfe für Tierärzt:innen</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -28,55 +29,132 @@
             <a href="https://calendly.com/juliuslaux/leophone-demo-mit-julius-laux" target="_blank" id="autopilot">Deine Praxis auf Autopilot</a>
         </div>
     </section>
-    
-    <section id="features">
+    <div class="section-title">
         <h3>Funktionen</h3>
         <h1>So funktioniert Leo</h1>
-        <div class="feature">
-            <img src="assets/Fritzbox Logo (1).png" alt="Anrufweiterleitung Bild">
-            <h3>Schritt 1: Anrufweiterleitung</h3>
-            <p>Einfach Anbindung mit sipgate oder Telekom.</p>
+    </div>
+
+    <section id="features" class="feature-container">
+
+        <div class="feature-card">
+                <div id="logos" class="feature-image">
+                    <img id="telekom-logo" src="assets/Telekom Logo.jpg" alt="Telekom Logo">
+                    <img src="assets/Fritzbox Logo (1).png" alt="">
+                </div>
+                <div class="feature-content">
+                    <h3>Schritt 1: Anrufweiterleitung an Leo</h3>
+                    <p>Die Integration von Leo ist kinderleicht: Deine Telefonanlage oder FRITZ!Box leitet Anrufe automatisch an Leos Nummer weiter – nach Wunsch nach 3 Klingeltönen oder nur außerhalb der Öffnungszeiten. Keine zusätzliche Hardware, keine komplizierte Installation – in weniger als fünf Minuten startklar!</p>
+                </div>
         </div>
-        <div class="feature">
-            <img src="assets/leo_ohne_hintergrund.png" alt="Leo nimmt Anruf entgegen Bild">
-            <h3>Schritt 2: Leo geht ran</h3>
-            <p>Leo nimmt den Anruf professionell entgegen und sammelt alle relevanten Informationen.</p>
+
+        <div class="feature-card">
+            <div class="feature-image">
+                <img id="leo" src="assets/leo_ohne.png" alt="leo">
+            </div>
+            <div class="feature-content">
+                <h3>Schritt 2: Leo geht ans Telefon</h3>
+                <p>Leo übernimmt rund um die Uhr die telefonische Assistenz für deine Tierarztpraxis. Er begrüßt Anrufer professionell, erfasst Kontaktdaten und Anliegen und qualifiziert Anfragen nach deinen Vorgaben. Ob Terminvergabe, Notfalltriage oder Auskünfte – Leo entlastet dein Team und stellt sicher, dass kein Anruf verloren geht.</p>
+            </div>
         </div>
-        <div class="feature">
-            <img src="assets/leo_email.png" alt="Benachrichtigung Bild">
-            <h3>Schritt 3: Benachrichtigung</h3>
-            <p>Du erhältst eine strukturierte Nachricht mit allen wichtigen Informationen.</p>
-        </div>
+
+            <div class="feature-card">
+                <div id="leo-dashboard" class="feature-image">
+                    <img src="assets/leophone_dashboard.png" alt="Leophone Dashboard">
+                </div>
+                <div class="feature-content">
+                    <h3>Schritt 3: Du wirst über jeden Anruf benachrichtigt</h3>
+                    <p>Im leophone Dashboard siehst du jeden Anruf inklusive des Transkripts sowie der empfohlenen Aktion z.B. eine Terminbuchung oder ein Rückruf. Zusäztlich wirst du über jeden Anruf auch per Mail benachrichtigt. So bist du jederzeit bestens informiert und hast alles im Blick!</p>
+                </div>
+            </div>
+
     </section>
     
+    <div class="section-title">
+        <h3>Preis</h3>
+        <h1>Leo gibt es für jede Praxis</h1>
+    </div>
     <section id="pricing">
-        <h2>Leo für jede Praxis</h2>
         <div class="pricing-card">
-            <h3>Starter</h3>
-            <p>99€/Monat - 60 Anrufminuten, Dashboard Zugriff</p>
-            <a href="https://calendly.com/dein-link" target="_blank" class="cta">Demo vereinbaren</a>
+            <h3 class="plan-name">Starter</h3>
+            <div class="price">
+                <h1 class="price-amount">99€</h1>
+                <h3 class="price-period">/Monat</h3>
+            </div>
+            <div class="plan-information">
+                <p>60 Anrufminuten</p>
+                <p>Dashboard Zugriff</p>
+                <p>Email Support</p>
+                <p>Individuelle Anpassung</p>
+            </div>
+            <div class="cta-white">
+                <a href="https://calendly.com/dein-link" target="_blank">Demo vereinbaren</a>
+            </div>
         </div>
+    
         <div class="pricing-card">
-            <h3>Pro</h3>
-            <p>199€/Monat - 120 Anrufminuten, Telefon Support</p>
-            <a href="https://calendly.com/dein-link" target="_blank" class="cta">Demo vereinbaren</a>
+            <h3 class="plan-name">Pro</h3>
+            <div class="price">
+                <h1 class="price-amount">199€</h1>
+                <h3 class="price-period">/Monat</h3>
+            </div>
+            <div class="plan-information">
+                <p>120 Anrufminuten</p>
+                <p>Alles aus Starter</p>
+                <p>Telefon Support</p>
+                <p>Persönliche Konfiguration mit Experten</p>
+            </div>
+            <div class="cta-white">
+                <a href="https://calendly.com/dein-link" target="_blank">Demo vereinbaren</a>
+            </div>
         </div>
+    
         <div class="pricing-card">
-            <h3>Alleskönner</h3>
-            <p>399€/Monat - 500 Anrufminuten, Monatliches Entwicklungsgespräch</p>
-            <a href="https://calendly.com/dein-link" target="_blank" class="cta">Demo vereinbaren</a>
+            <h3 class="plan-name">Alleskönner</h3>
+            <div class="price">
+                <h1 class="price-amount">399€</h1>
+                <h3 class="price-period">/Monat</h3>
+            </div>
+            <div class="plan-information">
+                <p>500 Anrufminuten</p>
+                <p>Alles aus Pro</p>
+                <p>Monatliches Entwicklungsgespräch</p>
+                <p>Zusätliche Konfigurationsmöglichkeiten</p>
+            </div>
+            <div class="cta-white">
+                <a href="https://calendly.com/dein-link" target="_blank">Demo vereinbaren</a>
+            </div>
         </div>
+    </section>
+    <section id="last">
+        <img src="assets/leo_ohne.png" alt="Bild von Leo">
+        <div id="last-text">
+            <div id="text"></div>
+            <h1>Klingt interessant?</h1>
+            <h1 id="democall">Jetzt kostenlose Demo vereinbaren!</h1>
+            <div id="last-cta">
+                <a href="https://calendly.com/juliuslaux/leophone-demo-mit-julius-laux" class="cta">Demo vereinbaren</a>
+            </div>
+        </div>
+
     </section>
     
     <footer id="footer">
         <div class="footer-logo">
             <p class="logo-text">leophone</p>
         </div>
-        <p>Wir bauen Leo, die KI-Bürokraft für Tierärzt:innen, die alle deine Anrufe automatisch annimmt, eine Konversation führt und zusammenfasst.</p>
-        <p>Copyright © LeoPhone UG</p>
-        <a href="datenschutz.html">Datenschutz</a> |
-        <a href="impressum.html">Impressum</a> |
-        <a href="kontakt.html">Kontakt</a>
+        <div class="footer-content">
+            <p>Wir entwickeln Leo, die KI-Bürokraft für Tierärzt:innen, die alle deine Anrufe automatisch annimmt, eine Konversation führt und zusammenfasst.</p>
+        </div>
+        <div class="legal-info">
+            <div class="Copyright">
+                <p>Copyright ©. All rights reserved to leophone UG (haftungsbeschränkt)</p>
+            </div>
+            <div class="links">
+                <a href="datenschutz.html">Datenschutzerklärung</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="agb.html">AGBs</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

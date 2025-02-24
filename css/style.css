@@ -3,7 +3,8 @@
 * {box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
+    font-family: "Albert Sans";
+    scroll-behavior: smooth;
 
 }
 
@@ -18,11 +19,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 120px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    overflow: hidden;
+    padding: 30px 200px;
 }
 
 .logo {
@@ -42,7 +39,7 @@ nav li a:hover{
     color: #3B82F6;
 }
 .cta{
-     padding: 9px 25px;
+     padding: 10px 20px;
      background-color: #1E3A8A;
      border: none;
      border-radius: 12px;
@@ -53,14 +50,20 @@ nav li a:hover{
      
 }
 .cta:hover{
-    background-color: #3B82F6;
+    transform:  scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 #hero{
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 60px 120px;
-    gap: 40px;
+    padding: 80px 200px;
+    gap: 60px;
+}
+#hero img{
+    max-width: 50%;
+    height: auto;
 }
 h1{
     font-family: "Albert Sans";
@@ -82,40 +85,291 @@ h1{
 }
 #autopilot{
     display: inline-block;
-    padding: 9px 20px;
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     border: 2px solid #1E3A8A;
     border-radius: 12px;
     color: #1E3A8A;
-    transition: all 0.3 ease 0s;
+    transition:all 0.3s ease 0s;
 
 
 }
 #autopilot:hover{
+    transform:  scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.section-title{
+    text-align: left;
+    font-family: "Albert Sans";
+    padding-left: 200px;
+    padding-top: 80px;
+}
+.section-title h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #1E3A8A;
+}
+.section-title h1{
+    font-size: 36px;
+    font-weight: normal;
+    color: black;
+    padding-top: 10px;
+
+}
+.feature-container{
+    margin-top: 100px;
+}
+.feature-card{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.feature-image{
+    width: 400px;
+    background-color: #f3f4f6;
+    border-radius: 12px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.feature-image img{
+    object-fit: contain;
+    margin: 20px 20px;
+}
+#leo-dashboard {
+    object-fit: cover;
+    overflow: hidden;
+
+}
+#logos img{
+    width: 33%;
+}
+#telekom-logo{
+    border-radius: 12px;
+}
+.feature-content{
+    margin-bottom: 50px;
+    margin-left: 40px;
+    width: 65%;
+    margin-top: 50px;
+}
+.feature-content h3{
+    margin-bottom: 30px;
+    color: #1E3A8A;
+}
+.feature-content p{
+    font-size: 18px;
+}
+   
+
+
+.bold-text{
+    font-weight: bold;
+    background-color: #f3f4f6;
+}
+.pricing-card{
+    display: flex;
+    background-color: #1E3A8A;
+    flex-direction: column;
+    border: 2px solid #1E3A8A;
+    border-radius: 12px;
+    height: 400px;
+    width: 380px;
+    margin-top: 40px;
+    box-shadow: 0px 4px 10px rgba(0,0,0, 0.2);
+}
+#pricing{
+    display: flex;
+    justify-content: center;
+    margin: 50px 200px;
+    gap: 21px;
+}
+.price{
+    display: flex;
+}
+
+.pricing-card h3{
     background-color: #1E3A8A;
     color: white;
 }
-#features{
-    align-items: center;
-    text-align: center;
-    padding: 60px 120px;
-    font-family: "Albert Sans";
-    
+.pricing-card h1{
+    background-color: #1E3A8A;
+    color: white;
 }
-
-#features h1 {
+.plan-information p{
+    margin: 10px 20px;
+    justify-content: center;
+}
+.plan-information p{
+    background-color: #1E3A8A;
+    color: white;
+}
+.plan-information p::before {
+    content: "\f00c"; 
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900;
+    margin-right: 10px;
+    color: white;
+}
+.price{
+    margin: 30px 20px;
+    background-color: #1E3A8A;
+    align-items: first baseline;
+}
+.price-amount h1{
+    font-size: 36px;
+    color: white;
     font-weight: normal;
-    text-align: left;
+    background-color: #1E3A8A;
+}
+.plan-name{
+    align-items: left;
+    margin-left: 20px;
+    font-weight: 18px;
+    margin-top: 24px;
+}
+.price-period{
+    margin-left: 5px;   
+    font-weight: normal;
+}
+.cta-white{
+    cursor: pointer;
+    margin-top: auto;
+    justify-self: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+    display: flex;
 
 }
-#features h3{
-    color: #1E3A8A;
+.cta-white a{
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center; /* Vertikale Zentrierung */
+    background: white;
+    color: black;
+    text-decoration: none;
     font-weight: bold;
-    text-align: left;
-    padding-bottom: 10px;
-    
+    font-size: 18px;
+    border-radius: 12px;
+    transition:all 0.3s ease 0s;
+    padding: 9px 25px;
 }
-.feature{
-    background: color #f3f4f6;    
+.cta-white a:hover{
+    transform:  scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#footer{
+    background-color: #2769EC;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.footer-logo{
+}
+.logo-text{
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 40px;
+    color: white;
+    padding-top: 60px;
+}
+.footer-content{
+    font-size: 18px;
+    margin: 50px 40px;
+}
+#footer p{
+    color: white;
+}
+.legal-info{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 40px;
+    justify-content: space-between;
+}
+.Copyright{
+    margin-bottom: 40px;
+}
+.links{
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+}
+.links a{
+    color: white;
+}
+#last{
+    display: flex;
+    margin-top: 200px;
+    margin-right: 350px;
+    margin-left: 350px;
+    justify-content: center;
+}
+#last-text{
+    align-items: center;
+}
+#text{
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+#democall{
+    color: #3B82F6;
+}
+#last-cta{
+    margin-top: 40px;
+}
+
+
+#page-title{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Albert Sans";
+    color: #1E3A8A;
+    text-align: left;
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+#page-date{
+    margin-bottom: 50px;
+}
+.data-content{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.data-content h3{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Albert Sans";
+    color: darkslategrey;
+    gap: 10px ;
+    margin-bottom: 20px;
+
+}
+.data-content p{
+    font-size: 18px;
+    font-family: "Albert Sans";
+    color: darkslategray;
+    margin-bottom: 40px;
+
+}
+.impressum-content{
+    font-size: 18px;
+    color: darkslategrey;
+    margin-left: 400px;
+    margin-right: 400px;
+
+}
+.impressum-content p{
+    color: darkslategrey;
+}
+.impressum-content h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#impressum-last{
+    margin-bottom: 100px;
 }
