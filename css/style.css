@@ -288,17 +288,16 @@ h1 {
 }
 #last{
     display: flex;
-    margin-top: 200px;
-    margin-right: 350px;
-    margin-left: 350px;
+    margin-right: 200px;
+    margin-left: 200px;
     justify-content: center;
 }
 #last-text{
     align-items: center;
+    margin-bottom: 50px;
 }
 #text{
     padding-top: 100px;
-    margin-bottom: 20px;
 }
 #democall{
     color: #3B82F6;
